@@ -14,14 +14,14 @@ console.log(arrayObj);
 // nuovo array in cui inserire una copia degli oggetti presenti in arrayOb aggiungendo la proprietà position
 const arrayObjCopia = [];
 
-// ciclo for per ciclare l'array di partenza
-for (let i = 0; i < arrayObj.length; i++) {
+// ciclo forEach per ciclare l'array di partenza
+arrayObj.forEach((element) => {
 
-  var nuovoOggetto = {...arrayObj[i], position: generatoreLettereRandom()};
+  var nuovoOggetto = {...element, position: generatoreLettereRandom()};
 
   arrayObjCopia.push(nuovoOggetto);
 
-}
+});
 
 console.log(arrayObjCopia);
 
