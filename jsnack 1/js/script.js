@@ -5,18 +5,12 @@
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
 // richesta numero iniziale
-var numeroMin = parseInt(prompt("scrivi un numero da 0 a 6"));
+var numeroMin = parseInt(prompt("scrivi un numero da 0 a 5"));
 
 // richesta numero finale
-var numeroMax = parseInt(prompt("scrivi un numero da 0 a 6"));
+var numeroMax = parseInt(prompt("scrivi un numero da 0 a 5"));
 
-// nuovo array da riempire con gli elementi selezionati
-const newArray = [];
-
-// versione con gli estremi esclusi
-newArray.push(myArray.slice(numeroMin, numeroMax -1));
-
-// versione con gli estremi inclusi
-// newArray.push(myArray.slice(numeroMin -1, numeroMax));
+// ciclo filter per filtrare dall'array di partenza i nomi compresi tra i numeri inseriti dall'utente e per inserirli in un nuovo array
+const newArray = myArray.filter((element, index) => index >= numeroMin && index <= numeroMax);
 
 console.log(newArray);
