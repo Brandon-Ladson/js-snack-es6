@@ -11,16 +11,9 @@ const arrayObj = [
 
 console.log(arrayObj);
 
-// nuovo array in cui inserire una copia degli oggetti presenti in arrayOb aggiungendo la proprietà position
-const arrayObjCopia = [];
-
-// ciclo forEach per ciclare l'array di partenza
-arrayObj.forEach((element) => {
-
-  var nuovoOggetto = {...element, position: generatoreLettereRandom()};
-
-  arrayObjCopia.push(nuovoOggetto);
-
+// ciclo map per creare una copia dell'array di partenza e per aggiungere ad ogni oggetto la proprietà position
+const arrayObjCopia = arrayObj.map((element) => {
+  return {...element, position: generatoreLettereRandom()}
 });
 
 console.log(arrayObjCopia);
