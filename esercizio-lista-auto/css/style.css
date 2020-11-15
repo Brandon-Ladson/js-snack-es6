@@ -1,0 +1,26 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cecece;
+    text-align: center;
+}
+
+#container, #new-container, .car-container{
+    padding: 20px;
+}
+
+/* regole content */
+.content{
+    display: flex;
+}
+
+/* regole car container */
+.car-container{
+    width: 50%;
+    border: 1px solid #000;
+}
