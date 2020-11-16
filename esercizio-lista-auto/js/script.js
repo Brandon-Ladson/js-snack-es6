@@ -72,11 +72,11 @@ copiaArray(nuovaLista, newContainer);
 // FUNZIONI
 // funzione per copiare array
 function copiaArray(nomeArray, nomeContainer) {
-    
+
     nomeArray.forEach((element) => {
 
         let content = nomeContainer.innerHTML;
-    
+
         nomeContainer.innerHTML = `${content}
             <div>
                 <i class="fas fa-car" style="color:${element.color}"></i>
